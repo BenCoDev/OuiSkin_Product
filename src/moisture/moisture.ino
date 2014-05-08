@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 const int sensorPin = 0;    // select the input pin for the sensor
 int sensorValue = 0;  // variable to store the value coming from the sensor
 long time; //var to store time
