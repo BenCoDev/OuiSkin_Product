@@ -21,6 +21,7 @@ MoistureSensor::MoistureSensor(){
 
 void MoistureSensor::init(){
 	// to be implemented
+	_moistureValue = 0;
 }
 
 
@@ -33,12 +34,15 @@ void MoistureSensor::init(){
  */
 void MoistureSensor::getValue(){
 	// to be implemented
+	_moistureValue = analogRead(MOISTURE_SENSOR_PIN);
 }
 
 /**
  * @brief
  */
-void MoistureSensor::getDebug(){
+void MoistureSensor::debug(){
 	// to be implemented
+	Serial.print(F("Moisture Value: "));
+	Serial.println(_moistureValue);
 }
 

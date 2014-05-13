@@ -12,11 +12,11 @@
 /**
  * @class MoitstureSensors
  */
-class MoistureSensors {
+class MoistureSensor {
 
 	public:
 
-		MoistureSensors();
+		MoistureSensor();
 
 		void init();
 
@@ -27,8 +27,8 @@ class MoistureSensors {
 	private:
 
 		//	VARIABLES
-		uint8_t moistureValue;
-
+		uint8_t _moistureValue;
+		static const uint8_t MOISTURE_SENSOR_PIN = 0;
 };
 
 #endif
