@@ -21,7 +21,8 @@ class MoistureSensor {
 		void init();
 
 		//	SENSORS
-		void getValue();
+		void readValue();
+		uint8_t getValue();
 		void debug();
 
 	private:

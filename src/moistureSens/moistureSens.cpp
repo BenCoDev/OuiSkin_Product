@@ -23,8 +23,8 @@ void loop() {
 	// measure and print during 3 sec
 	while(millis() - time <= 3000)
 	{
-		sensor.getValue();
-		sensor.debug();
+        sensor.readValue();
+		Serial.println(sensor.getValue());
 		delay(500);
 	}
 }
