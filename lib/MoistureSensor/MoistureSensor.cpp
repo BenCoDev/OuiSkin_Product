@@ -32,9 +32,17 @@ void MoistureSensor::init(){
 /**
  * @brief
  */
-void MoistureSensor::getValue(){
+void MoistureSensor::readValue(){
 	// to be implemented
 	_moistureValue = analogRead(MOISTURE_SENSOR_PIN);
+}
+
+/**
+ * @brief
+ */
+uint8_t MoistureSensor::getValue(){
+	// to be implemented
+	return _moistureValue;
 }
 
 /**
